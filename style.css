@@ -1,0 +1,419 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.container-navbar {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  background-color: transparent;
+  margin-bottom: 20px;
+  transition: top .3s ease-in-out;
+  z-index: 1000;
+}
+
+.ul-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.li-navbar {
+  list-style-type: none;
+  font-size: 18px;
+  margin: 30px;
+  font-weight: bolder;
+}
+
+.li-navbar a:hover {
+  border-bottom: 2px solid #c7d3d4;
+  color: #c7d3d4;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.dropdown-content {
+  margin: 0px 0px 0px 0px;
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 0px 0px 0px;
+  display: block;
+}
+
+.container-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-image: url('assets/compsc-2.gif');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home-judul {
+  font-size: 48px;
+  font-weight: bolder;
+  margin: 50px 0px 30px 0px;
+}
+
+.home-isi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  font-size: 18px;
+}
+
+.button {
+  border: 2px solid #c7d3d4;
+  border-radius: 36px;
+  background-color: transparent;
+  margin-top: 40px;
+  padding: 10px 24px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #c7d3d4;
+  color: #4a2a6b;
+  transition: .5s ease-in-out;
+}
+
+.container-about {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-judul {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: left;
+  margin: -50px 0px 25px 0px;
+  font-size: 24px;
+}
+
+.about-isi {
+  padding: 0px 400px;
+  text-align: justify;
+  width: 100%;
+}
+
+.about-client {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.about-client ul {
+  margin-top: 10px;
+}
+
+.container-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 75vh;
+  background-image: url('assets/compsc-3.gif');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.content-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.btn-content {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50px;
+  margin: 10px 20px;
+  padding: 7.5px 20px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.btn-content:hover {
+  background-color: transparent;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.our-client{
+  padding-top: 225px;
+}
+
+.our-client img{
+  margin: 0px 10px;
+}
+
+.cursor {
+  cursor: default;
+}
+
+.container-desc {
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.desc-judul {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.desc-isi {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 200px;
+}
+
+.isi-1 {
+  flex: 1;
+  text-align: justify;
+  margin-top: 100px;
+}
+
+.isi-2 {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.team {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.team h2 {
+  margin-bottom: 10px;
+}
+
+.btn-desc {
+  padding: 10px 20px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 100px;
+  margin: 7.5px 0px;
+  width: 38%;
+  font-weight: bold;
+}
+
+.btn-desc:hover {
+  margin-left: 10px;
+  transition: .5s ease-in-out;
+}
+
+.work {
+  padding: 10px 20px;
+  margin: 7.5px 0px;
+  width: 35%;
+  font-weight: bold;
+}
+
+.work:hover {
+  padding-left: 25px;
+  transition: .5s ease-in-out;
+}
+
+.ui-ux {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url('assets/compsc.gif');
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+.softdev {
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container-footer {
+  width: 100%;
+  height: 40vh;
+  background-color: #222;
+}
+
+.space1{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
+  height: 30vh;
+  background-image: url('assets/compsc-2.gif');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; /* Add this line */
+}
+
+.space1:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+}
+
+.space2{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
+  height: 30vh;
+  background-image: url('assets/compsc-3.gif');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; /* Add this line */
+}
+
+.space2:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, transparent 0%, black 100%);
+}
+
+.space3{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
+  height: 30vh;
+  background-image: url('assets/compsc-3.gif');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; /* Add this line */
+}
+
+.space3:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+}
+
+.space4{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
+  height: 30vh;
+  background-image: url('assets/compsc.gif');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; /* Add this line */
+}
+
+.space4:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, transparent 0%, black 100%);
+}
+
+.space5{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
+  height: 30vh;
+  background-image: url('assets/compsc.gif');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; /* Add this line */
+}
+
+.space5:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+}
